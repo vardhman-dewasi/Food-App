@@ -3,6 +3,7 @@ import Spinner from "./Spinner";
 import data from "./data.json";
 import { Product } from "./Product";
 import { Filter } from "./Filter";
+import { FilterSection } from "./FilterSection";
 
 export const Home = () => {
   const [loading, setLoading] = useState(false);
@@ -34,7 +35,8 @@ export const Home = () => {
   }, [selectedCountry]);
 
   return (
-    <div className="mt-10">
+    <div className="mt-5">
+      <FilterSection/>
       {/* Country Filter */}
       <Filter
         countries={countries}
@@ -46,7 +48,7 @@ export const Home = () => {
       {loading ? (
         <Spinner />
       ) : items.length > 0 ? (
-        <div className="flex justify-center flex-wrap w-full p-2 mx-auto space-y-10 space-x-5 mt-10">
+        <div className="flex justify-center flex-wrap w-full  mx-auto space-x-5">
           {items.map((item) => (
             <Product key={item.idMeal} item={item} />
           ))}

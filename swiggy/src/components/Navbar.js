@@ -6,7 +6,7 @@ const Navbar = () => {
       {/* Logo */}
       <div className="flex items-center">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/1/13/Swiggy_logo.png" // Swiggy logo URL
+          src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg" // Swiggy logo URL
           alt="Swiggy Logo"
           className="h-8"
         />
