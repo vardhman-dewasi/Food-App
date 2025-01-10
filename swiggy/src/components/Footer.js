@@ -2,26 +2,26 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#1C1C1C] text-gray-300 py-12 px-5 sm:px-10 md:px-20">
+    <div className="bg-[#1C1C1C] text-gray-300 mt-10 py-12 px-5 sm:px-10 md:px-20">
       <div className="max-w-screen-xl mx-auto">
         {/* Top Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {/* Company Information */}
           <div className="space-y-4">
-            <h2 className="text-white text-xl font-semibold">Swiggy</h2>
+            <h2 className="text-white text-4xl font-bold">Swiggy</h2>
             <p className="text-sm">
               Swiggy is India's premier online food ordering and delivery service. Offering a seamless experience,
               we deliver food right to your doorstep.
             </p>
             <div className="flex space-x-6">
               <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
-                <i className="fab fa-facebook-f text-lg"></i>
+                <i className="fab fa-facebook-f text-4xl"></i>
               </a>
               <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
-                <i className="fab fa-twitter text-lg"></i>
+                <i className="fab fa-twitter text-4xl"></i>
               </a>
               <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
-                <i className="fab fa-instagram text-lg"></i>
+                <i className="fab fa-instagram text-4xl"></i>
               </a>
             </div>
           </div>
@@ -55,10 +55,10 @@ export const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h2 className="text-white text-xl font-semibold">Contact Us</h2>
+            <h2 className="text-orange-600 text-xl font-semibold">Contact Us</h2>
             <p className="text-sm">Email: <a href="mailto:support@swiggy.com" className="text-gray-400 hover:text-orange-500">support@swiggy.com</a></p>
             <p className="text-sm">Phone: +91-123-456-7890</p>
-            <p className="text-sm">Address: 123 Food Street, India</p>
+            <p className="text-sm">Address: 123 Food Street, Jodhpur, India</p>
           </div>
         </div>
 
@@ -70,13 +70,13 @@ export const Footer = () => {
           <p>&copy; {new Date().getFullYear()} Swiggy. All Rights Reserved.</p>
           <div className="flex items-center space-x-4">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Swiggy_logo.svg/512px-Swiggy_logo.svg.png"
+              src="https://media-assets.swiggy.com/portal/testing/seo-home/Group.svg"
               alt="Swiggy Logo"
               className="w-24 h-auto"
             />
           </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
