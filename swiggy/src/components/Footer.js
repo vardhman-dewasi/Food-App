@@ -14,13 +14,13 @@ export const Footer = () => {
               we deliver food right to your doorstep.
             </p>
             <div className="flex space-x-6">
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
+              <a href="#" className="text-orange-500 hover:text-gray-400 transition duration-300">
                 <i className="fab fa-facebook-f text-4xl"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
+              <a href="#" className="text-orange-500 hover:text-gray-400 transition duration-300">
                 <i className="fab fa-twitter text-4xl"></i>
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500 transition duration-300">
+              <a href="#" className="text-orange-500 hover:text-gray-400 transition duration-300">
                 <i className="fab fa-instagram text-4xl"></i>
               </a>
             </div>
