@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Food App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a React application that allows users to explore food items from different countries. The app fetches meal data from the TheMealDB API (https://www.themealdb.com/) and allows users to filter and sort meals based on country and various criteria.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## Features
+- **Country-based Meal Filter**: Users can choose their favorite country's food and explore a variety of meals.
+- **Filter Options**: You can apply filters like Fast Delivery, Favourites, Ratings 4.0+, Pure Veg, and Price Range.
+- **Sorting**: Sort meals alphabetically (A-Z).
+- **Modal for Meal Details**: Click on a meal to view more details in a modal window.
+- **Redux for State Management**: The app uses Redux to manage global state, including selected country and modal visibility.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
+- **React**: For building the UI components.
+- **Redux Toolkit**: For managing global state (filters, selected country, and modal).
+- **Tailwind CSS**: For styling the application.
+- **TheMealDB API**: To fetch meal data based on the selected country.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Project Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
+1. Clone the repository:
+   
+   git clone https://github.com/Vardaram-Frontend-Developer/swiggy.git
+   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+   cd swiggy
+   npm install
+   # or
+   yarn install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+   
+   npm start
+   # or
+   yarn start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. The app will run on (http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **`src/`**: Contains all the source code for the app.
+  - **`redux/`**: Contains Redux slices and the store configuration.
+  - **`components/`**: Contains React components like `Home`, `Product`, `Filter`, `Modal`, etc.
+  - **`App.js`**: The main component that renders the app.
+  - **`index.js`**: The entry point for the React application.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How it Works
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **App Initialization**: The `App` component is rendered into the DOM and wrapped with Redux `Provider` to give the app access to the Redux store.
+2. **State Management**: The Redux store manages the `selectedCountry` (chosen country for the meals) and `isModalOpen` (for modal visibility). The `FilterSlice` handles the country filter and `ModalSlice` controls the modal state.
+3. **Data Fetching**: On selecting a country, the app fetches meal data from TheMealDB API. It updates the UI with the list of meals based on the selected country.
+4. **Sorting**: Users can sort the meals alphabetically, and the UI reflects this choice.
+5. **Filter Buttons**: Users can apply additional filters such as "Fast Delivery," "Ratings 4.0+," etc.
+6. **Modal**: When a user clicks on a meal, a modal window opens showing more details about the selected meal.
 
-### Making a Progressive Web App
+## Example
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Selecting a Country
+- Choose a country from the dropdown to filter meals based on the selected country's cuisine.
 
-### Advanced Configuration
+### Applying Filters
+- You can filter the results based on criteria such as ratings, price range, and whether the meal is vegetarian.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Sorting Meals
+- Sort the meals alphabetically by clicking the "Sort By" button.
 
-### Deployment
+### Meal Details
+- Click on a meal to open a modal showing more information about the selected meal.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to fork the project and submit pull requests.
