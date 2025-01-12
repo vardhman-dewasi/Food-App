@@ -7,7 +7,7 @@ This is a React application that allows users to explore food items from differe
 ## Features
 - **Country-based Meal Filter**: Users can choose their favorite country's food and explore a variety of meals.
 - **Filter Options**: You can apply filters like Fast Delivery, Favourites, Ratings 4.0+, Pure Veg, and Price Range.
-- **Sorting**: Sort meals alphabetically (A-Z).
+- **Sorting**: Sort meals alphabetically (A-Z) and (Z-A).
 - **Modal for Meal Details**: Click on a meal to view more details in a modal window.
 - **Redux for State Management**: The app uses Redux to manage global state, including selected country and modal visibility.
 
@@ -29,20 +29,19 @@ This is a React application that allows users to explore food items from differe
 ### Installation
 1. Clone the repository:
    
-   git clone https://github.com/Vardaram-Frontend-Developer/swiggy.git
+   git clone https://github.com/Vardaram-Frontend-Developer.git
    
 
 2. Install dependencies:
 
-   cd swiggy
    npm install
-   # or
+   or
    yarn install
 
 3. Start the development server:
    
    npm start
-   # or
+   or
    yarn start
 
 4. The app will run on (http://localhost:3000).
@@ -68,6 +67,12 @@ This is a React application that allows users to explore food items from differe
 4. **Sorting**: Users can sort the meals alphabetically, and the UI reflects this choice.
 5. **Filter Buttons**: Users can apply additional filters such as "Fast Delivery," "Ratings 4.0+," etc.
 6. **Modal**: When a user clicks on a meal, a modal window opens showing more details about the selected meal.
+
+
+
+## Watch Live-
+
+URL: 
 
 ## Example
 
