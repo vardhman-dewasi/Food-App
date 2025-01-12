@@ -2,7 +2,9 @@
 
 This is a React application that allows users to explore food items from different countries. The app fetches meal data from the TheMealDB API (https://www.themealdb.com/) and allows users to filter and sort meals based on country and various criteria.
 
+## Visit link
 
+Click here - https://vardaram-frontend-developer.vercel.app/
 
 ## Features
 - **Country-based Meal Filter**: Users can choose their favorite country's food and explore a variety of meals.
